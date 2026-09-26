@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Expense Tracker</string>
+    <string name="action_settings">Settings</string>
+    <string name="colored_text2">Don\'t have an account?<font color='#B4DE01'> Sign Up</font></string>
+    <string name="colored_text3">Already have an account?<font color='#B4DE01'> Sign In</font></string>
+
+
+    <string name="expense">Expense</string>
+    <string name="income">Income</string>
+    <string name="category">Category</string>
+    <string name="amount">Amount</string>
+    <string name="submit">Submit</string>
+    <string name="category_icon_desc">Category icon</string>
+    <string name="amount_expense">- ৳ %s</string>
+    <string name="amount_income">+ ৳ %s</string>
+    <string name="add_transaction">Add Transaction</string>
+    <string name="todo">TODO</string>
+
+    <string-array name="time_filters">
+        <item>Daily</item>
+        <item>Weekly</item>
+        <item>Monthly</item>
+        <item>Yearly</item>
+    </string-array>
+
+    <string-array name="income_expense_toggle">
+        <item>Expense</item>
+        <item>Income</item>
+    </string-array>
+
+
+</resources>

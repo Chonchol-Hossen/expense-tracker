@@ -1,0 +1,60 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.expensetracker">
+
+    <!-- Internet Permission for Firebase -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES"/>
+
+    <!-- Allows the app to access network state (optional, but good practice) -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" android:maxSdkVersion="28" />
+
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ExpenseTracker">
+
+        <!-- Firebase Initialization (Important!) -->
+        <meta-data
+            android:name="com.google.firebase.database.FirebaseDatabase"
+            android:value="true" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <!-- Main Activity -->
+        <activity android:name=".OnboardingActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Sign Up & Authentication Activities -->
+        <activity android:name=".SignUpActivity" />
+        <activity android:name=".SignInActivity" />
+        <activity android:name=".ForgotPasswordActivity" />
+        <activity android:name=".HomeActivity" />
+        <activity android:name=".NotificationActivity" />
+        <activity android:name=".ChartsActivity" />
+        <activity android:name=".ChatbotActivity" />
+        <activity android:name=".UserActivity" />
+        <activity android:name=".CreateTransactionActivity"
+            android:windowSoftInputMode="adjustResize|stateHidden"
+            android:exported="false" />
+        <activity android:name=".AccountEditActivity" />
+        <activity android:name=".CategoriesActivity" />
+        <activity android:name=".CurrencyActivity" />
+        <activity android:name=".WalletsActivity" />
+        <activity android:name=".SupportActivity" />
+
+    </application>
+</manifest>

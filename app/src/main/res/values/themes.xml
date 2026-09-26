@@ -1,0 +1,13 @@
+<resources>
+    <style name="Base.Theme.ExpenseTracker" parent="Theme.Material3.Light.NoActionBar">
+
+        <!-- Customize your light theme here -->
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">true</item>
+
+        <item name="android:selectableItemBackgroundBorderless">@null</item>
+    </style>
+
+    <style name="Theme.ExpenseTracker" parent="Base.Theme.ExpenseTracker" />
+</resources>
