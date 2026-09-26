@@ -1,0 +1,27 @@
+# Gradle files
+.gradle/
+build/
+app/build/
+
+# IDE files
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Local configuration files
+local.properties
+
+# Secrets, API keys, and Service Accounts
+app/src/main/res/raw/credentials.json
+*.jks
+*.keystore
+*.pkcs12
+
+# Build outputs and releases
+app/release/
+/captures/
+
+# OS specific files
+.DS_Store
+Thumbs.db
